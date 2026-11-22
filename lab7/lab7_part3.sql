@@ -2,9 +2,6 @@
 -- =====================================================================
 -- PART 3: Constraints
 -- =====================================================================
-
-#-- --------------------------------------------------------------------
-#-- --- --------------------------------------------------------------------
 #----------------Q1
 ALTER TABLE Student 
 ADD CONSTRAINT check_program
@@ -109,7 +106,7 @@ check ( cost>=0);
 update Maintenance set cost =-100 where serialNO='U1';
 INSERT INTO Maintenance VALUES
 ('U7','2026-11-20 10:00:00','2026-11-20 12:00:00','Preventive','Calibration check',75.25,'Resolved',7);
--- ------------------
+
 -- -----------Q3
 ALTER TABLE Reservation 
 ADD CONSTRAINT check_temoral_rsv
@@ -125,7 +122,7 @@ update Maintenance set endTS='2026-04-12 08:00:00' where serialNo='U1';
 INSERT INTO Maintenance VALUES
 ('U5','2026-11-18 09:00:00','2026-11-19 17:00:00','Corrective','Motor replacement',350.50,'Resolved',6);
 -- ---------------------
--- -----------------
+
 
 
 
